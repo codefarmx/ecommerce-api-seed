@@ -1,17 +1,13 @@
 package com.sun.bookstore.model
 
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
+import jakarta.persistence.*
 import java.util.UUID
 
 @Entity
 data class Book(
-        @Id
-        @GeneratedValue(strategy = GenerationType.UUID)
-        val id: UUID,
+        @Id @GeneratedValue(strategy = GenerationType.UUID) val id: UUID? = null,
+        @Version val version: Int? = null,
         val title: String,
         val blurb: String,
-        val price: Int
+        val price: Int,
 )
