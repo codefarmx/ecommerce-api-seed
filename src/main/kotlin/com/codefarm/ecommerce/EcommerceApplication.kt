@@ -1,11 +1,11 @@
-package com.sun.bookstore
+package com.codefarm.ecommerce
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class BookstoreApplication
+class EcommerceApplication
 
 fun main(args: Array<String>) {
-    runApplication<BookstoreApplication>(*args)
+    runApplication<EcommerceApplication>(*args)
 } 

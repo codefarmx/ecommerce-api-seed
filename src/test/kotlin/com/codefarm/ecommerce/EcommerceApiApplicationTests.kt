@@ -1,10 +1,10 @@
-package com.sun.bookstore
+package com.codefarm.ecommerce
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class BookstoreApiApplicationTests {
+class EcommerceApiApplicationTests {
 
     @Test
     fun contextLoads() {

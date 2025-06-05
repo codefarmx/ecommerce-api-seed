@@ -1,4 +1,4 @@
-package com.sun.bookstore.constants
+package com.codefarm.ecommerce.constants
 
 object Properties {
     const val ID = "id"
