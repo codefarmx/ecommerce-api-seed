@@ -14,10 +14,10 @@ class ProductController(
 ) {
 
     @GetMapping
-    fun getAllProducts(): List<Product> = productService.getAll()
+    fun getAll(): List<Product> = productService.getAll()
 
     @PostMapping
-    fun createProduct(@RequestBody request: ProductRequest) = request
+    fun create(@RequestBody request: ProductRequest) = request
             .let { adapter.toProduct(request) }
             .let { productService.create(it) }
             .let { adapter.toProductResponse(it) }
